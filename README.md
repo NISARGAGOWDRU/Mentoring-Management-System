@@ -7,17 +7,19 @@
 
 Comprehensive mentoring management system built with PHP and MySQL.
 
-![Mentoring System](https://raw.githubusercontent.com/NISARGAGOWDRU/Mentoring-Management-System/main/assets/mentoring_dashboard.png)
+## Demo Images
+
+![Mentoring](https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80)
 
 ##  Features
 
--  User Management - Mentors, mentees, admins
--  Scheduling System - Schedule sessions
--  Messaging - Direct communication
--  Progress Tracking - Monitor mentee progress
--  Documentation - Notes and records
--  Analytics - Performance metrics
--  Role-Based Access - Different permissions
+-  User Management - Mentors, mentees, and admin roles
+-  Scheduling System - Schedule and manage mentoring sessions
+-  Messaging System - Direct communication between mentors and mentees
+-  Progress Tracking - Monitor mentee goals and achievements
+-  Documentation - Session notes and progress records
+-  Analytics Dashboard - Performance metrics and insights
+-  Role-Based Access - Different permissions for different roles
 
 ##  Technologies
 
@@ -29,24 +31,46 @@ Comprehensive mentoring management system built with PHP and MySQL.
 ##  Quick Start
 
 ```bash
+# Clone the repository
 git clone https://github.com/NISARGAGOWDRU/Mentoring-Management-System.git
-mysql -u root -p < database.sql
-# Update config.php
+cd Mentoring-Management-System
+
+# Create database
+mysql -u root -p
+CREATE DATABASE mentoring_system;
+SOURCE database.sql;
+
+# Configure
+# Edit config.php with your database credentials
+
+# Access the application
 http://localhost/mentoring-system
 ```
 
-##  User Roles
+##  User Roles & Features
 
-- **Admin** - System management
-- **Mentor** - Guide mentees
-- **Mentee** - Receive mentoring
+### Admin
+- System management
+- User creation and deletion
+- Platform analytics
 
-##  Dashboard Features
+### Mentor
+- Create mentoring relationships
+- Schedule sessions
+- Provide feedback
+
+### Mentee
+- Find and connect with mentors
+- Track progress
+- View recommendations
+
+##  Key Dashboard Features
 
 - Session Management
 - Progress Tracking
 - Real-time Notifications
 - Analytics & Reports
+- Goal Management
 
 ##  License
 
